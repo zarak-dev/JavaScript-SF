@@ -1,0 +1,122 @@
+JAVASCRIPT TOPICS FOR REACT JS
+ 
+=================================
+1. JavaScript Fundamentals (Must Know)
+=================================
+ 
+- Variables (let, const, var)
+- Data types (string, number, boolean, null, undefined, object, symbol)
+- Operators (arithmetic, comparison, logical)
+- Conditional statements (if, switch)
+- Loops (for, while, for...of, for...in)
+- Functions (declaration, expression)
+- Scope (global, function, block)
+- Hoisting
+- Closures
+- this keyword
+ 
+ 
+=================================
+2. ES6+ (Very Important for React)
+=================================
+ 
+- Arrow functions (=>)
+- Template literals
+- Destructuring (array & object)
+- Spread operator (...)
+- Rest parameters
+- Default parameters
+- Enhanced object literals
+- Modules (import / export)
+- Optional chaining (?.)
+- Nullish coalescing (??)
+ 
+=================================
+3. Array Methods (Used Heavily in React)
+=================================
+ 
+- map()
+- filter()
+- reduce()
+- forEach()
+- find()
+- some()
+- every()
+- includes()
+- sort()
+ 
+ 
+ 
+=================================
+4. Objects in JavaScript
+=================================
+ 
+- Object properties & methods
+- Object destructuring
+- Object.keys()
+- Object.values()
+- Object.entries()
+- Shallow vs deep copy
+- Reference vs primitive types
+ 
+ 
+=================================
+5. Asynchronous JavaScript
+=================================
+ 
+- Callbacks
+- Promises
+- async / await
+- fetch() API
+- Error handling (try...catch)
+- Event loop basics
+ 
+ 
+=================================
+6. DOM & Events (Basic Understanding)
+=================================
+ 
+- DOM selection
+- Event listeners
+- Event bubbling & capturing
+- Prevent default behavior
+ 
+ 
+=================================
+7. Advanced JavaScript (Helpful for React)
+=================================
+ 
+- Higher-order functions
+- Pure functions
+- Immutability
+- Shallow vs deep comparison
+- Debouncing & throttling
+- Prototype & class basics
+- bind(), call(), apply()
+ 
+ 
+=================================
+8. Modern JavaScript Concepts Used in React
+=================================
+ 
+- Functional programming concepts
+- ES Modules
+- Closures in hooks
+- Short-circuit evaluation (&&)
+- Ternary operator
+- Dynamic imports
+- Optional chaining in real applications
+ 
+ 
+=================================
+Recommended Learning Order
+=================================
+ 
+1. JavaScript Basics
+2. ES6+
+3. Array & Object methods
+4. Asynchronous JavaScript
+5. Functional programming concepts
+6. Start learning React
+
+

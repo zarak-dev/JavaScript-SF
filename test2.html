@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+  /*  //Spread Operator 
+    const defaultSettings = {
+  theme: "dark",
+  fontSize: 16,
+  showNotifications: true,
+  retries: 3
+};
+
+const userInput = {
+  theme: "light",
+  fontSize: 0,
+  showNotifications: false,
+};
+
+// YOUR TASK:
+// 1. Merge the two objects using the spread operator.
+// 2. Ensure that for fontSize and showNotifications, the userInput 
+//    value is used even if it's "falsy" (like 0 or false).
+// 3. If a value is truly null or undefined in userInput, use the default.
+  const finalProject = {
+    ...defaultSettings,
+    ...userInput,
+    fontSize: userInput.fontSize ?? defaultSettings.fontSize,
+    showNotifications:  userInput.showNotifications ?? defaultSettings.fontSize
+    
+  };
+   
+  //import {z} from './test.js';
+  
+      let user;
+  if (user = 'isLoggedIn' && 'hasSubscribed') {
+    console.log('Welcome User');
+  } else {
+    console.log('Try Again');
+    
+  }
+ 
+  let age = 18;
+  if (age < 18) {
+    console.log('Access Denied');
+  } else if (age >= 18 && age < 21){
+    console.log('Limited Permission');
+    
+  } else if (age > 21){
+    console.log('Full Permission');
+    
+  }
+
+  const myZ = ['Banana', 'Pineapple', 'Mango', 'Apple', 'Kiwi'];
+  for (let i = 0; i < myZ.length; i++) {
+    const fruits = myZ[i];
+    console.log(fruits);
+    
+  }
+  for (const fruits of myZ){
+    console.log(fruits);
+    
+  }
+
+  const myZCars = {
+    Name: 'Toyota Century',
+    Maker: 'Toyota inc',
+    Year: 2024
+  };
+
+  for (const key in myZCars) {
+    console.log(myZCars);
+  
+  }
+
+  function myZFunc (width, height) {
+    const areaOfRectangle = width * height;
+   return areaOfRectangle;
+  }
+  console.log(  `Area of Rectangle: ${myZFunc(5,2)}`);
+   
+    const  greeting = function (name){
+      return `Hello ${name}`;
+        
+    }
+  console.log(greeting("Zarak")); */
+    
+    const createCounter = function (){
+     let count = 0;
+      return  function() {
+        count++;
+        console.log(count);
+        
+      };
+
+    }
+    const myCounter = createCounter();
+    myCounter();
+    myCounter();
+    myCounter();
+    myCounter();
+
+
+    const numZ = [1,2,3,4,5];
+    const newNumZ = numZ.map(numZ => numZ * 2 )
+    console.log(newNumZ);
+    
+    const medicinePrice = [102,304,332,784,11,342,22];
+    const discountedPrice = medicinePrice.filter(price => price < 200);
+    console.log(discountedPrice);
+    
+    const users = [{Name: 'Zarak', ID: 23, Work:'Smart Forum'}, {Name: 'ZarakKhan', ID: 13, Work:'Smart Forum'},{Name: 'ZK', ID: 53, Work:'Smart Forum'}];
+    const user = users.find(z => z.ID === 23)
+    console.log(user);
+    
+    const user2 = [true, false, true, true];
+    const userNew = user2.every(t => t === true);
+    console.log(userNew);
+    
+    const vegetables = ['banana', 'shakes']
+    vegetables.forEach(veg => console.log(veg))
+
+    
+    const vegetables1 = ['banana', 'shakes'];
+  console.log(vegetables1.includes('banana'))
+  </script>
+
+</body>
+</html>

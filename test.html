@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing JS</title>
+</head>
+<body>
+
+  <button class="js">click</button>
+  <script>
+   /* let x = 3;
+    x = 4;
+    const y = 0;
+    let z = null;
+    console.log(5 == '5');
+    console.log(x);
+    console.log(y);
+    console.log(typeof z);
+   let office = 3;
+   let dayName;
+    switch (office) {
+      case 1:
+        dayName = 'Monday';
+        break;
+    
+      case 2:
+        dayName = 'Tuesday';
+        break;
+    
+      case 3:
+        dayName = 'Wednesday';
+        break;
+    
+      default: 
+      dayName = 'Invalid Day';
+        break;
+    };
+    console.log("The selected day is:", dayName);
+    
+    for (let i = 0; i <= 10; i++){
+      console.log(i);
+    }; */
+    
+    
+    function greet(name){
+
+    if(!name){
+      console.log('Hi there');
+    } 
+      else{
+      console.log(`Hello ${name}` );
+    }
+  }
+  greet('Zarak');
+  greet();
+  greet('Aimmyyy');
+ 
+  const zarak = () => 'Zarak'; 
+
+  function createGreeter(name) {
+  // The 'name' variable is trapped in this scope
+  return function() {
+    console.log(`Hello ${name}`);
+  };
+}
+
+// 1. We "initialize" the closure with a specific name
+const greetZarak = createGreeter("Zarak");
+
+// 2. Even though createGreeter has finished running, 
+// the function inside 'greetZarak' still remembers "Zarak"
+console.log(greetZarak()); // Output: Hello Zarak
+
+console.log(this);
+
+// A function that doesn't need any data to work
+const logClick = () => {
+  console.log("Button was pressed!");
+};
+
+// Usage
+const myBtn = document.querySelector('.js');
+myBtn.addEventListener("click", logClick);
+
+
+const user = { 
+  name: 'Zarak',
+  age: 20,
+  city: 'Mardan'
+
+}
+
+const { name, age} = user;
+console.log(user);
+
+const username = "TechGuru";
+const status = "Online";
+const keyName = "last_login";
+
+//Enhanced object literals
+const userProfile = {
+  username, // Same as username: username
+  status,   
+  [keyName]: "2024-05-12", // Computed property (key is "last_login")
+  
+  // Method shorthand
+  logout() {
+    console.log("User logged out.");
+  }
+};
+ const st = '100';
+ const num = Number(st) + 50;
+ console.log(num);
+ 
+
+
+  </script>
+</body>
+</html>
