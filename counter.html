@@ -4,16 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Counter</title>
+  <style>
+      .primaryBtn{
+        padding: 5px;
+        border-radius: 1;
+      }
+
+  </style>
 </head>
 <body>
     <h2>Counter</h2>
-    <input type="text"> <button>Calculate</button> <br> <br>
+    <input type="text" class="js-input"> <button class="js-print-button" onclick="
+    printResult()
+    ">Print</button> <br> <br>
     <p class="result"></p>
-    <button>+</button>
-    <button>-</button>
+    <button class="js-sub-button primaryBtn" onclick="forSub()">-</button>
+    <button class="js-add-button primaryBtn" onclick="forAdd()">+</button>
+    <button class="js-reset-button primaryBtn" onclick="">Reset</button>
 
     <script>
-      document.querySelector('.result').innerHTML = text;
+      const inputItem = document.querySelector('.js-input');
+      const inputResult = document.querySelector('.result');
+     // console.log(inputResult, inputValue);
+     function forAdd () {
+      let  currentNumber = Number(inputItem.value);
+      currentNumber = currentNumber += 1;
+      inputItem.value = currentNumber;
+      console.log(currentNumber);
+     }
+     
+     function forSub(){
+      let currentNumber = Number(inputItem.value);
+      currentNumber = currentNumber -= 1;
+      inputItem.value = currentNumber;
+      currentNumber <= 0 ? currentNumber = 0 : currentNumber--;
+      console.log(currentNumber);  
+     }
+
+     function printResult (){
+      inputResult.innerHTML = inputItem.value
+     }
+
 
     </script>
 </body>
